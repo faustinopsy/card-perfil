@@ -2,7 +2,7 @@
   {
     "id": 1, 
     "nome": "Pessoa 1",
-    "foto": "src/img/robo.png",
+    "foto": "/img/robo.png",
     "links": ["Link 1","Link 2"],
     "imageSize":200
   }
