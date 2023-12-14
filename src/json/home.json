@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "titulo": "Card 1",
+    "imagem": "src/img/robo.png",
+    "descricao": "Descrição do Card 1",
+    "imageSize":200
+  },
+  {
+    "id": 2,
+    "titulo": "Card 2",
+    "imagem": "src/img/robo.png",
+    "descricao": "Descrição do Card 2",
+    "imageSize":200
+  },
+  {
+    "id": 3,
+    "titulo": "Card 3",
+    "imagem": "src/img/robo.png",
+    "descricao": "Descrição do Card 3",
+    "imageSize":200
+  }
+]
