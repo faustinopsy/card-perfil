@@ -19,7 +19,7 @@
   "dependencies": {
     "react-router-dom": "^6.20.1"
   },
-  "homepage": "https://faustinopsy.github.io/",
+  "homepage": "https://faustinopsy.github.io/card-perfil",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
