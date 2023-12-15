@@ -5,7 +5,7 @@ function HomePage() {
   const [cards, setCards] = useState([]);
 
   useEffect(() => {
-    fetch('/json/home.json')
+    fetch(`${process.env.BASE_URL}json/home.json`)
     .then(response => response.json())
     .then(data => {
       setCards(data);

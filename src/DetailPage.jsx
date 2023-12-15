@@ -6,7 +6,7 @@ function DetailPage() {
   const { id } = useParams();
 
   useEffect(() => {
-    fetch('/json/home.json') 
+    fetch(`${process.env.BASE_URL}json/home.json`) 
       .then(response => response.json())
       .then(data => {
         const itemDetail = data.find(item => item.id.toString() === id);

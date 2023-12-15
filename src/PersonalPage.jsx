@@ -5,7 +5,7 @@ function PersonalPage() {
   const [profiles, setProfiles] = useState([]);
 
   useEffect(() => {
-    fetch('/json/persona.json')
+    fetch(`${process.env.BASE_URL}json/persona.json`)
       .then(response => response.json())
       .then(data => setProfiles(data));
     
