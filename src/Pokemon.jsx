@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Swal from 'sweetalert2';
-
+import PokemonCard from './PokemonCard';
 function PokemonViewer() {
     const [pagina, setPagina] = useState(1);
     const [pokemon, setPokemon] = useState(null);
@@ -58,18 +58,20 @@ function PokemonViewer() {
     }
 
     return (
-        <div className="cards-poker">
-           
+        <div>
+          <div className="cards-container">
             {pokemon && (
-                <div className="cards-poker">
-                    <img id="image" src={pokemon.sprites.front_default} alt={pokemon.name} onClick={mostrarDetalhes} />
-                </div>
+              <PokemonCard
+                name={pokemon.name}
+                image={pokemon.sprites.front_default}
+                onClick={mostrarDetalhes}
+              />
             )}
-            <p>Clique no pokemon</p>
-             <button id="anterior" onClick={carregarAnterior}>Anterior</button>
-            <button id="proximo" onClick={carregarProximo}>Próximo</button>
+          </div>
+          <button onClick={carregarAnterior}>Anterior</button>
+          <button onClick={carregarProximo}>Próximo</button>
         </div>
-    );
+      );
 }
 
 export default PokemonViewer;
