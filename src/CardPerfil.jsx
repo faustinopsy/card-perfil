@@ -1,10 +1,12 @@
 import React from 'react';
 
 function Card({ title, image,tamanho, desc, links }) {
+  const baseUrl = process.env.NODE_ENV === 'production' ? process.env.BASE_URL : '';
+  const imagePath = baseUrl + image;
   return (
     <div className="card-container">
       <h3>{title}</h3>
-      <img src={image} alt={title} 
+      <img src={imagePath} alt={title} 
         style={{
           width: tamanho,
           height: tamanho

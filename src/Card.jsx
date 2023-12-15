@@ -8,10 +8,13 @@ function Card({ id,title, image,tamanho, desc, links }) {
     navigate(`/detail/${id}`);
   };
   
+  const baseUrl = process.env.NODE_ENV === 'production' ? process.env.BASE_URL : '';
+  const imagePath = baseUrl + image;
+
   return (
     <div  className="card-container" onClick={handleClick}>
       <h3>{title}</h3>
-      <img src={image} alt={title} 
+      <img src={imagePath} alt={title} 
         style={{
           width: tamanho,
           height: tamanho
