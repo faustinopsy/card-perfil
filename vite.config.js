@@ -6,6 +6,6 @@ export default defineConfig({
   base: '/card-perfil/',
   plugins: [react()],
   define: {
-    'process.env.BASE_URL': '/card-perfil/'
+    'process.env.BASE_URL': '"/card-perfil/"'
   }
 });
